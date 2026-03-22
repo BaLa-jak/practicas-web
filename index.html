@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#home">Inicio</a></li>
+          <li><a href="#about">Acerca de</a></li>
+          <li><a href="#skills">Habilidades</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero-section">
+        <div class="hero-card">
+          <h1>Elias Rosell</h1>
+          <p class="hero-description">Estudiante de ingenieria en software</p>
+          <a href="#" class="btn-cv">
+            <i class="fa-solid fa-download" aria-hidden="true"></i>
+            <span>Descargar cv</span>
+          </a>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="section-title">Acerca de</div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac
+          diam eget turpis gravida malesuada vel non purus.
+        </p>
+      </section>
+
+      <section id="skills">
+        <div class="section-title">Habilidades</div>
+        <div class="skills-list">
+          <div class="skill-tag">HTML</div>
+          <div class="skill-tag">CSS</div>
+          <div class="skill-tag">JavaScript</div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="section-title">Proyectos</div>
+        <div class="projects-grid">
+          <div class="project-card">
+            <img src="project1.jpg" alt="Project 1" />
+            <div class="project-info">
+              <h3>Proyecto 1</h3>
+              <p>Descripción del proyecto 1</p>
+              <div class="stack">HTML</div>
+              <div class="stack">CSS</div>
+              <div class="stack">JavaScript</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <form>
+          <input type="text" placeholder="Nombre" required />
+          <input type="email" placeholder="Correo electrónico" required />
+          <textarea placeholder="Mensaje" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+        <div class="social-icons">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
