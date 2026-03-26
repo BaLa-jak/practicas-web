@@ -11,10 +11,10 @@
     />
   </head>
   <body>
-    <header>
-      <nav>
+    <header class="site-header">
+      <nav class="site-nav" aria-label="Navegacion principal">
         <ul>
-          <li><a href="#home">Inicio</a></li>
+          <li><a href="#home" class="active">Inicio</a></li>
           <li><a href="#about">Acerca de</a></li>
           <li><a href="#skills">Habilidades</a></li>
           <li><a href="#projects">Proyectos</a></li>
@@ -30,21 +30,41 @@
           <p class="hero-description">Estudiante de ingenieria en software</p>
           <a href="#" class="btn-cv">
             <i class="fa-solid fa-download" aria-hidden="true"></i>
-            <span>Descargar cv</span>
+            <span>Descargar CV</span>
           </a>
         </div>
       </section>
 
-      <section id="about">
-        <div class="section-title">Acerca de</div>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac
-          diam eget turpis gravida malesuada vel non purus.
-        </p>
+      <section id="about" class="about-section">
+        <div class="about-shell">
+          <div class="about-image-wrap">
+            <img
+              class="about-image"
+              src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 320'%3E%3Crect width='320' height='320' rx='160' fill='%23d9e3f1'/%3E%3Ccircle cx='160' cy='120' r='56' fill='%2386a0bf'/%3E%3Cpath d='M74 258c18-42 50-68 86-68s68 26 86 68' fill='%2386a0bf'/%3E%3Ctext x='160' y='292' text-anchor='middle' font-family='Arial, sans-serif' font-size='18' fill='%233b4d66'%3EPlaceholder%3C/text%3E%3C/svg%3E"
+              alt="Imagen de perfil temporal"
+            />
+          </div>
+
+          <div class="about-content">
+            <p class="eyebrow">Perfil profesional</p>
+            <h2 class="section-title">Acerca de</h2>
+            <p class="about-text">
+              Soy estudiante de ingenieria en software con interes en el
+              desarrollo web y la construccion de interfaces limpias, claras y
+              funcionales. Me enfoco en crear experiencias visuales bien
+              estructuradas, con una jerarquia efectiva, una alineacion
+              consistente y una presentacion que comunique profesionalismo.
+            </p>
+          </div>
+        </div>
       </section>
 
-      <section id="skills">
-        <div class="section-title">Habilidades</div>
+      <section id="skills" class="content-section">
+        <div class="section-heading">
+          <p class="eyebrow">Tecnologias</p>
+          <h2 class="section-title dark">Habilidades</h2>
+        </div>
+
         <div class="skills-list">
           <div class="skill-tag">HTML</div>
           <div class="skill-tag">CSS</div>
@@ -52,33 +72,48 @@
         </div>
       </section>
 
-      <section id="projects">
-        <div class="section-title">Proyectos</div>
+      <section id="projects" class="content-section">
+        <div class="section-heading">
+          <p class="eyebrow">Portafolio</p>
+          <h2 class="section-title dark">Proyectos</h2>
+        </div>
+
         <div class="projects-grid">
-          <div class="project-card">
-            <img src="project1.jpg" alt="Project 1" />
+          <article class="project-card">
+            <img
+              src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 420'%3E%3Crect width='640' height='420' fill='%23e9eef5'/%3E%3Cpath d='M90 300l95-108 78 82 92-114 127 140H90z' fill='%23b8c8db'/%3E%3Ccircle cx='228' cy='128' r='34' fill='%23c9a15f'/%3E%3Ctext x='320' y='372' text-anchor='middle' font-family='Arial, sans-serif' font-size='28' fill='%2336465d'%3EProyecto Placeholder%3C/text%3E%3C/svg%3E"
+              alt="Vista previa temporal de proyecto"
+            />
             <div class="project-info">
               <h3>Proyecto 1</h3>
-              <p>Descripción del proyecto 1</p>
-              <div class="stack">HTML</div>
-              <div class="stack">CSS</div>
-              <div class="stack">JavaScript</div>
+              <p>Descripcion breve del proyecto y objetivo principal.</p>
+              <div class="project-stack">
+                <span class="stack">HTML</span>
+                <span class="stack">CSS</span>
+                <span class="stack">JavaScript</span>
+              </div>
             </div>
-          </div>
+          </article>
         </div>
       </section>
 
-      <section id="contact">
-        <form>
+      <section id="contact" class="content-section contact-section">
+        <div class="section-heading">
+          <p class="eyebrow">Conversemos</p>
+          <h2 class="section-title dark">Contacto</h2>
+        </div>
+
+        <form class="contact-form">
           <input type="text" placeholder="Nombre" required />
-          <input type="email" placeholder="Correo electrónico" required />
-          <textarea placeholder="Mensaje" required></textarea>
+          <input type="email" placeholder="Correo electronico" required />
+          <textarea placeholder="Mensaje" rows="5" required></textarea>
           <button type="submit">Enviar</button>
         </form>
-        <div class="social-icons">
-          <i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-twitter"></i>
-          <i class="fa-brands fa-instagram"></i>
+
+        <div class="social-icons" aria-label="Redes sociales">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
         </div>
       </section>
     </main>
